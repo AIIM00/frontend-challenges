@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*38:Anonymous Functions Button Style*/
+        #runAnonymousFunctions {
+            padding: 1.4rem 2.5rem;
+            font-size: 16px;
+            cursor: pointer;
+            width: 200px;
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            /*          shadow color | x-offset | y-offset | blur radius | spread radius */
+            box-shadow: #333 0px 4px 6px -1px, #333 0px 2px 4px -1px;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<!--37-38-38.1-38.2:Anonymous Functions-->
+<body>
+    <button id="runAnonymousFunctions">Start</button>
+<!--39:ArrowFunctions-->
+<!--40:Scope-->
+<!--The field where the variable is limited in that field, if it is outside the field it cannot be accessed-->
+<!--Local scope are two types: block scope, function scope
+    Global scope can reach all the code bas local ma7sour-->
+<!--41:var vs const vs let -->
+<!--let hueh lal local scope function or block bikoun ma7sour bl funcion tabiito-->
+<!--let w var hene byetghyro fine ghyron bas const bikoun sebet m byetghyr btet3amal metel mu3amalet let yaane local scope-->
+<!--42 map reduce filter-->
+<!--var arr = [1,2,3,4,5,6,7,8,9,10];
+aam tmashe variable aala array
+let myArr = arr.map((x) => x * 2);-->
+<!--filter
+    let myArr = arr.filter(function(x){
+        if(x > 5){
+            return true
+            }else{
+                return false
+            }
+        return x > 5; fina nestaaml haida sater badel he l if wl else 
+
+    })-->
+<!--reduce
+badk taaml shi bi kel l array contents fa btestaaml l reduce, masaln bdk tejmaa values tabuun l array fa reduce btemshee aa kel l array w tejmaa w taatik total
+    let total = arr.reduce(function(previousValue, currentValue){
+        return previousValue + currentValue;
+    )-->     
+
+</body>
+<script src="anonymousFunctions.js"></script>
+</html>
