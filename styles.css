@@ -1,0 +1,31 @@
+body{
+    background-color: orange;
+    text-align:center;
+    font-family: Arial, sans-serif;
+}
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    bottom: 50vh;
+    left: 50%;
+    /* Use margin to center the toast */
+    /*min-width: 250px;*/
+    /*min-width of 250px / 2 = 125px*/
+    /* we can substitute the margin-left with transform: translateX(-50%); */
+    /*transform: translateX(-50%) automatically shifts the element left by half of its own width, so you no longer need to hardcode margin-left.*/
+    margin-left:-125px;
+    font-size: 17px;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+#toast.show {
+    visibility: visible;
+    opacity: 0.9;
+    bottom: 50vh;
+}
+
